@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="You are invited!">
+  <title>A Birthday Letter for You</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e6a1ac'/%3E%3Cpath d='M6 10h20v13H6z' fill='%23f4ccd2'/%3E%3Cpath d='m6 10 10 8 10-8' fill='none' stroke='%23bb5f70' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="invitation" id="invitation">
+    <section class="scene scene--sealed is-active" data-scene="sealed" aria-label="Sealed birthday invitation">
+      <button class="art-button sealed-card" type="button" aria-label="Open the invitation">
+        <img class="sealed-plate" src="assets/plate.png" alt="">
+        <img class="sealed-envelope" src="assets/envelope.png" alt="A pink envelope on a white plate">
+        <img class="ribbon-sway" src="assets/ribbon.png" alt="" aria-hidden="true">
+      </button>
+    </section>
+
+    <section class="scene scene--open" data-scene="open" aria-label="Opened birthday invitation" aria-hidden="true">
+      <button class="art-button open-card" type="button" aria-label="Pull out the birthday letter">
+        <img class="open-plate" src="assets/plate.png" alt="">
+        <img class="open-envelope" src="assets/open_mail.png" alt="An open pink envelope">
+        <img class="open-ribbon-lace" src="assets/ribbon_lace.png" alt="" aria-hidden="true">
+        <img class="letter-peek" src="assets/letter.png" alt="A colorful handmade letter peeking out of the envelope">
+        <span class="hint hint--open">tap the letter</span>
+      </button>
+    </section>
+
+    <section class="scene scene--letter" data-scene="letter" aria-label="Birthday letter" aria-hidden="true">
+      <article class="letter-page">
+        <img class="paper" src="assets/background.png" alt="">
+        <img class="collage" src="assets/letter_contents.png" alt="A scrapbook collage of birthday memories">
+
+        <img class="sticker sticker--cake" src="assets/Cake.png" alt="Birthday cake sticker">
+        <img class="sticker sticker--star" src="assets/Star.png" alt="">
+        <img class="sticker sticker--sun" src="assets/Sun.png" alt="">
+        <img class="sticker sticker--smile" src="assets/smiley.png" alt="">
+        <img class="sticker sticker--cloud" src="assets/Cloud.png" alt="">
+        <button class="details" type="button" aria-label="Invitation details">
+          <img src="assets/details_button.png" alt="Details">
+        </button>
+      </article>
+    </section>
+
+    <section class="scene scene--rsvp" data-scene="rsvp" aria-label="RSVP" aria-hidden="true">
+      <article class="rsvp-page">
+        <img class="rsvp-content" src="assets/rsvp_content.png" alt="">
+        <a class="rsvp-link" href="https://forms.gle/aLb9r6zN1EDLYiz97" aria-label="Open RSVP form">
+          <img src="assets/rsvp.png" alt="RSVP">
+        </a>
+        <button class="rsvp-back" type="button" aria-label="Back to invitation details">
+          <img src="assets/backButtom.png" alt="Back">
+        </button>
+      </article>
+    </section>
+  </main>
+  <audio id="main-sound" src="assets/mainSound.mp3" preload="auto" loop></audio>
+  <script src="script.js?v=audio-2"></script>
+</body>
+</html>
